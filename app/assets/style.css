@@ -49,6 +49,7 @@ h1 {
 .hero-panel,
 .summary-card,
 .chart-card,
+.insight-card,
 .footer-card {
     background: var(--rialto-panel);
     border: 1px solid var(--rialto-border);
@@ -161,6 +162,27 @@ h1 {
 .chart-card {
     margin-top: 0.7rem;
     padding: 0.85rem 0.85rem 0.4rem;
+}
+
+.insight-card {
+    background: #f8fbfd;
+    border-left: 4px solid var(--rialto-accent);
+    box-shadow: none;
+    color: #334155;
+    font-size: 0.94rem;
+    line-height: 1.5;
+    margin: 0.55rem 0 1rem;
+    padding: 0.82rem 1rem;
+}
+
+.summary-card ul {
+    margin-bottom: 0;
+    margin-top: 0.75rem;
+    padding-left: 1.25rem;
+}
+
+.summary-card li {
+    margin: 0.38rem 0;
 }
 
 .sidebar-brand {
