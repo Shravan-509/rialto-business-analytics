@@ -622,12 +622,9 @@ def generate_openai_summary(
         return fallback, "Rule-based fallback"
 
     try:
-        from openai import OpenAI, RateLimitError
-    except Exception as exc:
-        logger.info("OpenAI package unavailable; using rule-based fallback: %s", exc)
-        return fallback, "Rule-based fallback"
+        from openai import OpenAI
+        from openai import RateLimitError
 
-    try:
         client = OpenAI(api_key=api_key)
         prompt = build_summary_prompt_from_data(
             sentiment_df, topic_df, word_frequency_df
