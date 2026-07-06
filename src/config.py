@@ -6,6 +6,7 @@ the application outputs automatically.
 """
 
 from pathlib import Path
+import os
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -48,3 +49,20 @@ APP_SUBTITLE = (
     "Interactive decision intelligence for revenue, customers, returns, "
     "and satisfaction"
 )
+
+OPENAI_MODEL = os.getenv(
+    "OPENAI_MODEL",
+    "gpt-4.1-mini"
+)
+
+GEMINI_MODEL = os.getenv(
+    "GEMINI_MODEL",
+    "gemini-2.5-flash"
+)
+
+LLM_PROVIDER = os.getenv(
+    "LLM_PROVIDER",
+    "openai"
+).strip().lower()
+
+MAX_OUTPUT_TOKENS = 350

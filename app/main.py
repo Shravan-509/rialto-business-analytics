@@ -120,7 +120,7 @@ def main() -> None:
     )
 
     with st.expander("Dataset preview", expanded=False):
-        st.dataframe(cleaned_df.head(20), use_container_width=True)
+        st.dataframe(cleaned_df.head(20), width="stretch")
 
 
 if __name__ == "__main__":

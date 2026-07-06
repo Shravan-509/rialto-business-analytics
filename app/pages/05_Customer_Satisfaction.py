@@ -131,7 +131,7 @@ def main() -> None:
     render_insight("The satisfaction heatmap highlights where lower experience scores appear by time and revenue band.")
 
     st.markdown("### Low Satisfaction Transactions")
-    st.dataframe(low_satisfaction_table(filtered_df), use_container_width=True)
+    st.dataframe(low_satisfaction_table(filtered_df), width="stretch")
 
     render_executive_insights(
         [

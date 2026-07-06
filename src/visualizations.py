@@ -113,10 +113,11 @@ def render_kpi_cards(cards: list[dict[str, str]], columns_per_row: int = 4) -> N
 def render_chart(fig: go.Figure) -> None:
     """Render a Plotly figure inside the shared chart card."""
     st.markdown('<div class="chart-card">', unsafe_allow_html=True)
+    plotly_config = {"displayModeBar": False, "responsive": True}
     st.plotly_chart(
         fig,
-        use_container_width=True,
-        config={"displayModeBar": False, "responsive": True},
+       width="stretch",
+        config=plotly_config,
     )
     st.markdown("</div>", unsafe_allow_html=True)
 

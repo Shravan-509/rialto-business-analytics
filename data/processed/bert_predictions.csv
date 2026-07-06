@@ -1,0 +1,201 @@
+Transaction_ID,Customer_ID,review_text,bert_label,bert_confidence,bert_source
+TXN0001,CUST073,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0002,CUST060,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0003,CUST032,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0004,CUST040,Very satisfied with support team.,Positive,0.9995036125183105,Hugging Face DistilBERT SST-2
+TXN0005,CUST031,Quick delivery and excellent packaging.,Positive,0.9995286464691162,Hugging Face DistilBERT SST-2
+TXN0006,CUST067,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0007,CUST056,"Satisfied, but delivery company needs replacing.",Negative,0.990846574306488,Hugging Face DistilBERT SST-2
+TXN0008,CUST007,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0009,CUST012,Mislabelled product caused inconvenience.,Negative,0.9996880292892456,Hugging Face DistilBERT SST-2
+TXN0010,CUST053,Not the best. ,Negative,0.6877224445343018,Hugging Face DistilBERT SST-2
+TXN0011,CUST047,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0012,CUST079,"Product was not as advertised, incorrect size.",Negative,0.9965388774871826,Hugging Face DistilBERT SST-2
+TXN0013,CUST071,"Wrong colour item delivered, seems like mislabelling.",Negative,0.9997619986534119,Hugging Face DistilBERT SST-2
+TXN0014,CUST037,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0015,CUST071,No feedback provided,Positive,0.9353775382041931,Hugging Face DistilBERT SST-2
+TXN0016,CUST009,Quick delivery and excellent packaging.,Positive,0.9995286464691162,Hugging Face DistilBERT SST-2
+TXN0017,CUST029,Nice price. ,Positive,0.8658370971679688,Hugging Face DistilBERT SST-2
+TXN0018,CUST017,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0019,CUST052,"Wrong colour item delivered, seems like mislabelling.",Negative,0.9997619986534119,Hugging Face DistilBERT SST-2
+TXN0020,CUST027,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0021,CUST009,Thank you. ,Positive,0.9997454285621643,Hugging Face DistilBERT SST-2
+TXN0022,CUST025,Very satisfied with support team.,Positive,0.9995036125183105,Hugging Face DistilBERT SST-2
+TXN0023,CUST046,"Poor courier service, delayed again.",Negative,0.9997369647026062,Hugging Face DistilBERT SST-2
+TXN0024,CUST044,"Great deals, but items occasionally mismarked.",Negative,0.9672524333000183,Hugging Face DistilBERT SST-2
+TXN0025,CUST077,"Wrong colour item delivered, seems like mislabelling.",Negative,0.9997619986534119,Hugging Face DistilBERT SST-2
+TXN0026,CUST051,Mislabelled product caused inconvenience.,Negative,0.9996880292892456,Hugging Face DistilBERT SST-2
+TXN0027,CUST013,"Disappointed—label said one thing, product was another.",Negative,0.999707043170929,Hugging Face DistilBERT SST-2
+TXN0028,CUST006,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0029,CUST059,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0030,CUST016,No feedback provided,Positive,0.9353775382041931,Hugging Face DistilBERT SST-2
+TXN0031,CUST066,Item arrived damaged and wrongly labelled.,Negative,0.9995625615119934,Hugging Face DistilBERT SST-2
+TXN0032,CUST077,"Wrong colour item delivered, seems like mislabelling.",Negative,0.9997619986534119,Hugging Face DistilBERT SST-2
+TXN0033,CUST015,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0034,CUST064,No feedback provided,Positive,0.9353775382041931,Hugging Face DistilBERT SST-2
+TXN0035,CUST017,No feedback provided,Positive,0.9353775382041931,Hugging Face DistilBERT SST-2
+TXN0036,CUST057,"Delivery was delayed, not happy with the courier.",Negative,0.999721348285675,Hugging Face DistilBERT SST-2
+TXN0037,CUST042,Late delivery and no tracking updates.,Negative,0.9986969828605652,Hugging Face DistilBERT SST-2
+TXN0038,CUST071,"Wrong colour item delivered, seems like mislabelling.",Negative,0.9997619986534119,Hugging Face DistilBERT SST-2
+TXN0039,CUST036,Prompt delivery and smooth purchase process.,Positive,0.9997517466545105,Hugging Face DistilBERT SST-2
+TXN0040,CUST059,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0041,CUST050,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0042,CUST007,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0043,CUST074,Prompt delivery and smooth purchase process.,Positive,0.9997517466545105,Hugging Face DistilBERT SST-2
+TXN0044,CUST025,Very satisfied with support team.,Positive,0.9995036125183105,Hugging Face DistilBERT SST-2
+TXN0045,CUST072,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0046,CUST050,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0047,CUST059,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0048,CUST039,"Poor courier service, delayed again.",Negative,0.9997369647026062,Hugging Face DistilBERT SST-2
+TXN0049,CUST024,"Product was not as advertised, incorrect size.",Negative,0.9965388774871826,Hugging Face DistilBERT SST-2
+TXN0050,CUST015,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0051,CUST001,Broke in 2 days. ,Positive,0.9012718200683594,Hugging Face DistilBERT SST-2
+TXN0052,CUST016,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0053,CUST018,Item arrived damaged and wrongly labelled.,Negative,0.9995625615119934,Hugging Face DistilBERT SST-2
+TXN0054,CUST080,"Delivery was delayed, not happy with the courier.",Negative,0.999721348285675,Hugging Face DistilBERT SST-2
+TXN0055,CUST015,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0056,CUST005,Not the teapot I ordered.,Negative,0.9987820982933044,Hugging Face DistilBERT SST-2
+TXN0057,CUST043,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0058,CUST010,"Happy overall, but delivery partner was unprofessional.",Negative,0.9347510933876038,Hugging Face DistilBERT SST-2
+TXN0059,CUST067,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0060,CUST011,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0061,CUST034,Mislabelled product caused inconvenience.,Negative,0.9996880292892456,Hugging Face DistilBERT SST-2
+TXN0062,CUST038,"Delivery was delayed, not happy with the courier.",Negative,0.999721348285675,Hugging Face DistilBERT SST-2
+TXN0063,CUST023,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0064,CUST019,Very satisfied with support team.,Positive,0.9995036125183105,Hugging Face DistilBERT SST-2
+TXN0065,CUST017,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0066,CUST038,"Delivery was delayed, not happy with the courier.",Negative,0.999721348285675,Hugging Face DistilBERT SST-2
+TXN0067,CUST069,"Delivery was delayed, not happy with the courier.",Negative,0.999721348285675,Hugging Face DistilBERT SST-2
+TXN0068,CUST031,Quick delivery and excellent packaging.,Positive,0.9995286464691162,Hugging Face DistilBERT SST-2
+TXN0069,CUST075,"Happy overall, but delivery partner was unprofessional.",Negative,0.9347510933876038,Hugging Face DistilBERT SST-2
+TXN0070,CUST065,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0071,CUST014,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0072,CUST020,Delivery bad.,Positive,0.9224410653114319,Hugging Face DistilBERT SST-2
+TXN0073,CUST023,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0074,CUST060,Why this take so long. ,Negative,0.9857646822929382,Hugging Face DistilBERT SST-2
+TXN0075,CUST073,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0076,CUST044,"Great deals, but items occasionally mismarked.",Negative,0.9672524333000183,Hugging Face DistilBERT SST-2
+TXN0077,CUST028,Late delivery and no tracking updates.,Negative,0.9986969828605652,Hugging Face DistilBERT SST-2
+TXN0078,CUST012,Mislabelled product caused inconvenience.,Negative,0.9996880292892456,Hugging Face DistilBERT SST-2
+TXN0079,CUST009,Quick delivery and excellent packaging.,Positive,0.9995286464691162,Hugging Face DistilBERT SST-2
+TXN0080,CUST077,"Wrong colour item delivered, seems like mislabelling.",Negative,0.9997619986534119,Hugging Face DistilBERT SST-2
+TXN0081,CUST008,Delivery guy left parcel in unsafe spot.,Negative,0.999711811542511,Hugging Face DistilBERT SST-2
+TXN0082,CUST019,Nice support from customer support. ,Negative,0.9627166986465454,Hugging Face DistilBERT SST-2
+TXN0083,CUST080,No feedback provided,Positive,0.9353775382041931,Hugging Face DistilBERT SST-2
+TXN0084,CUST012,Mislabelled product caused inconvenience.,Negative,0.9996880292892456,Hugging Face DistilBERT SST-2
+TXN0085,CUST026,Prompt delivery and smooth purchase process.,Positive,0.9997517466545105,Hugging Face DistilBERT SST-2
+TXN0086,CUST021,Quick delivery and excellent packaging.,Positive,0.9995286464691162,Hugging Face DistilBERT SST-2
+TXN0087,CUST037,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0088,CUST006,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0089,CUST056,"Satisfied, but delivery company needs replacing.",Negative,0.990846574306488,Hugging Face DistilBERT SST-2
+TXN0090,CUST051,Mislabelled product caused inconvenience.,Negative,0.9996880292892456,Hugging Face DistilBERT SST-2
+TXN0091,CUST026,Prompt delivery and smooth purchase process.,Positive,0.9997517466545105,Hugging Face DistilBERT SST-2
+TXN0092,CUST034,Mislabelled product caused inconvenience.,Negative,0.9996880292892456,Hugging Face DistilBERT SST-2
+TXN0093,CUST067,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0094,CUST015,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0095,CUST025,Very satisfied with support team.,Positive,0.9995036125183105,Hugging Face DistilBERT SST-2
+TXN0096,CUST070,"Always good, except last order delivery was late.",Positive,0.9991121888160706,Hugging Face DistilBERT SST-2
+TXN0097,CUST077,"Wrong colour item delivered, seems like mislabelling.",Negative,0.9997619986534119,Hugging Face DistilBERT SST-2
+TXN0098,CUST058,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0099,CUST023,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0100,CUST043,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0101,CUST072,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0102,CUST012,Mislabelled product caused inconvenience.,Negative,0.9996880292892456,Hugging Face DistilBERT SST-2
+TXN0103,CUST074,Prompt delivery and smooth purchase process.,Positive,0.9997517466545105,Hugging Face DistilBERT SST-2
+TXN0104,CUST019,Very satisfied with support team.,Positive,0.9995036125183105,Hugging Face DistilBERT SST-2
+TXN0105,CUST079,"Product was not as advertised, incorrect size.",Negative,0.9965388774871826,Hugging Face DistilBERT SST-2
+TXN0106,CUST052,"Wrong colour item delivered, seems like mislabelling.",Negative,0.9997619986534119,Hugging Face DistilBERT SST-2
+TXN0107,CUST040,Very satisfied. ,Positive,0.997988224029541,Hugging Face DistilBERT SST-2
+TXN0108,CUST044,"Great deals, but items occasionally mismarked.",Negative,0.9672524333000183,Hugging Face DistilBERT SST-2
+TXN0109,CUST046,"Poor courier service, delayed again.",Negative,0.9997369647026062,Hugging Face DistilBERT SST-2
+TXN0110,CUST046,"Poor courier service, delayed again.",Negative,0.9997369647026062,Hugging Face DistilBERT SST-2
+TXN0111,CUST041,"Delivery was delayed, not happy with the courier.",Negative,0.999721348285675,Hugging Face DistilBERT SST-2
+TXN0112,CUST080,"Delivery was delayed, not happy with the courier.",Negative,0.999721348285675,Hugging Face DistilBERT SST-2
+TXN0113,CUST017,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0114,CUST062,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0115,CUST029,Quick delivery and excellent packaging.,Positive,0.9995286464691162,Hugging Face DistilBERT SST-2
+TXN0116,CUST048,Late delivery and no tracking updates.,Negative,0.9986969828605652,Hugging Face DistilBERT SST-2
+TXN0117,CUST063,"Disappointed—label said one thing, product was another.",Negative,0.999707043170929,Hugging Face DistilBERT SST-2
+TXN0118,CUST064,"Product was not as advertised, incorrect size.",Negative,0.9965388774871826,Hugging Face DistilBERT SST-2
+TXN0119,CUST017,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0120,CUST067,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0121,CUST047,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0122,CUST042,Late delivery and no tracking updates.,Negative,0.9986969828605652,Hugging Face DistilBERT SST-2
+TXN0123,CUST033,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0124,CUST019,Very satisfied with support team.,Positive,0.9995036125183105,Hugging Face DistilBERT SST-2
+TXN0125,CUST050,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0126,CUST078,"Delivery was delayed, not happy with the courier.",Negative,0.999721348285675,Hugging Face DistilBERT SST-2
+TXN0127,CUST029,Quick delivery and excellent packaging.,Positive,0.9995286464691162,Hugging Face DistilBERT SST-2
+TXN0128,CUST008,Delivery guy left parcel in unsafe spot.,Negative,0.999711811542511,Hugging Face DistilBERT SST-2
+TXN0129,CUST048,Late delivery and no tracking updates.,Negative,0.9986969828605652,Hugging Face DistilBERT SST-2
+TXN0130,CUST061,"Product was not as advertised, incorrect size.",Negative,0.9965388774871826,Hugging Face DistilBERT SST-2
+TXN0131,CUST017,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0132,CUST062,Not what I wanted. ,Positive,0.9329985976219177,Hugging Face DistilBERT SST-2
+TXN0133,CUST005,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0134,CUST063,"Disappointed—label said one thing, product was another.",Negative,0.999707043170929,Hugging Face DistilBERT SST-2
+TXN0135,CUST069,Bad deliver. ,Positive,0.9995701909065247,Hugging Face DistilBERT SST-2
+TXN0136,CUST041,"Delivery was delayed, not happy with the courier.",Negative,0.999721348285675,Hugging Face DistilBERT SST-2
+TXN0137,CUST045,"Fantastic service, will shop again!",Positive,0.9998308420181274,Hugging Face DistilBERT SST-2
+TXN0138,CUST017,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0139,CUST073,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0140,CUST018,Item arrived damaged and wrongly labelled.,Negative,0.9995625615119934,Hugging Face DistilBERT SST-2
+TXN0141,CUST022,"Delivery was delayed, not happy with the courier.",Negative,0.999721348285675,Hugging Face DistilBERT SST-2
+TXN0142,CUST080,"Delivery was delayed, not happy with the courier.",Negative,0.999721348285675,Hugging Face DistilBERT SST-2
+TXN0143,CUST064,"Product was not as advertised, incorrect size.",Negative,0.9965388774871826,Hugging Face DistilBERT SST-2
+TXN0144,CUST061,"Product was not as advertised, incorrect size.",Negative,0.9965388774871826,Hugging Face DistilBERT SST-2
+TXN0145,CUST045,"Fantastic service, will shop again!",Positive,0.9998308420181274,Hugging Face DistilBERT SST-2
+TXN0146,CUST054,"Great deals, but items occasionally mismarked.",Negative,0.9672524333000183,Hugging Face DistilBERT SST-2
+TXN0147,CUST026,Prompt delivery and smooth purchase process.,Positive,0.9997517466545105,Hugging Face DistilBERT SST-2
+TXN0148,CUST076,"Happy overall, but delivery partner was unprofessional.",Negative,0.9347510933876038,Hugging Face DistilBERT SST-2
+TXN0149,CUST042,Late delivery and no tracking updates.,Negative,0.9986969828605652,Hugging Face DistilBERT SST-2
+TXN0150,CUST079,"Product was not as advertised, incorrect size.",Negative,0.9965388774871826,Hugging Face DistilBERT SST-2
+TXN0151,CUST036,Prompt delivery and smooth purchase process.,Positive,0.9997517466545105,Hugging Face DistilBERT SST-2
+TXN0152,CUST035,Mislabelled product caused inconvenience.,Negative,0.9996880292892456,Hugging Face DistilBERT SST-2
+TXN0153,CUST015,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0154,CUST017,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0155,CUST008,Delivery guy left parcel in unsafe spot.,Negative,0.999711811542511,Hugging Face DistilBERT SST-2
+TXN0156,CUST078,"Delivery was delayed, not happy with the courier.",Negative,0.999721348285675,Hugging Face DistilBERT SST-2
+TXN0157,CUST008,Delivery guy left parcel in unsafe spot.,Negative,0.999711811542511,Hugging Face DistilBERT SST-2
+TXN0158,CUST036,Prompt delivery and smooth purchase process.,Positive,0.9997517466545105,Hugging Face DistilBERT SST-2
+TXN0159,CUST067,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0160,CUST025,Very satisfied with support team.,Positive,0.9995036125183105,Hugging Face DistilBERT SST-2
+TXN0161,CUST014,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0162,CUST021,Quick delivery and excellent packaging.,Positive,0.9995286464691162,Hugging Face DistilBERT SST-2
+TXN0163,CUST028,Late delivery and no tracking updates.,Negative,0.9986969828605652,Hugging Face DistilBERT SST-2
+TXN0164,CUST021,Quick delivery and excellent packaging.,Positive,0.9995286464691162,Hugging Face DistilBERT SST-2
+TXN0165,CUST005,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0166,CUST001,"Product was not as advertised, incorrect size.",Negative,0.9965388774871826,Hugging Face DistilBERT SST-2
+TXN0167,CUST070,"Always good, except last order delivery was late.",Positive,0.9991121888160706,Hugging Face DistilBERT SST-2
+TXN0168,CUST031,Quick delivery and excellent packaging.,Positive,0.9995286464691162,Hugging Face DistilBERT SST-2
+TXN0169,CUST075,"Happy overall, but delivery partner was unprofessional.",Negative,0.9347510933876038,Hugging Face DistilBERT SST-2
+TXN0170,CUST053,"Satisfied, but delivery company needs replacing.",Negative,0.990846574306488,Hugging Face DistilBERT SST-2
+TXN0171,CUST072,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0172,CUST054,"Great deals, but items occasionally mismarked.",Negative,0.9672524333000183,Hugging Face DistilBERT SST-2
+TXN0173,CUST066,Item arrived damaged and wrongly labelled.,Negative,0.9995625615119934,Hugging Face DistilBERT SST-2
+TXN0174,CUST043,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0175,CUST012,Mislabelled product caused inconvenience.,Negative,0.9996880292892456,Hugging Face DistilBERT SST-2
+TXN0176,CUST060,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0177,CUST060,Rude person. ,Negative,0.6119314432144165,Hugging Face DistilBERT SST-2
+TXN0178,CUST046,"Poor courier service, delayed again.",Negative,0.9997369647026062,Hugging Face DistilBERT SST-2
+TXN0179,CUST076,"Happy overall, but delivery partner was unprofessional.",Negative,0.9347510933876038,Hugging Face DistilBERT SST-2
+TXN0180,CUST053,"Satisfied, but delivery company needs replacing.",Negative,0.990846574306488,Hugging Face DistilBERT SST-2
+TXN0181,CUST015,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0182,CUST035,Mislabelled product caused inconvenience.,Negative,0.9996880292892456,Hugging Face DistilBERT SST-2
+TXN0183,CUST038,"Delivery was delayed, not happy with the courier.",Negative,0.999721348285675,Hugging Face DistilBERT SST-2
+TXN0184,CUST032,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0185,CUST054,"Great deals, but items occasionally mismarked.",Negative,0.9672524333000183,Hugging Face DistilBERT SST-2
+TXN0186,CUST063,Disappointed— too expensive. ,Negative,0.9230026602745056,Hugging Face DistilBERT SST-2
+TXN0187,CUST078,"Delivery was delayed, not happy with the courier.",Negative,0.999721348285675,Hugging Face DistilBERT SST-2
+TXN0188,CUST030,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0189,CUST003,"Happy overall, but delivery partner was unprofessional.",Negative,0.9347510933876038,Hugging Face DistilBERT SST-2
+TXN0190,CUST055,Quick delivery and excellent packaging.,Positive,0.9995286464691162,Hugging Face DistilBERT SST-2
+TXN0191,CUST020,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0192,CUST014,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0193,CUST070,"Always good, except last order delivery was late.",Positive,0.9991121888160706,Hugging Face DistilBERT SST-2
+TXN0194,CUST077,Wrong colour item delivered.,Negative,0.7596126794815063,Hugging Face DistilBERT SST-2
+TXN0195,CUST015,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0196,CUST007,"Great experience, fast delivery and good product quality.",Positive,0.9998811483383179,Hugging Face DistilBERT SST-2
+TXN0197,CUST067,Item broken on receipt. ,Negative,0.9870456457138062,Hugging Face DistilBERT SST-2
+TXN0198,CUST072,"Item did not match description, possibly mislabelled.",Negative,0.999699592590332,Hugging Face DistilBERT SST-2
+TXN0199,CUST062,"Delivery took too long, needs improvement.",Negative,0.9995322227478027,Hugging Face DistilBERT SST-2
+TXN0200,CUST074,Prompt delivery and smooth purchase process.,Positive,0.9997517466545105,Hugging Face DistilBERT SST-2

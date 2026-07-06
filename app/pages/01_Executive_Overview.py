@@ -298,10 +298,11 @@ def render_charts(df) -> None:
     revenue_fig.update_layout(title="Monthly Revenue Trend")
     revenue_fig.update_yaxes(tickprefix="$", separatethousands=True)
     st.markdown('<div class="chart-card">', unsafe_allow_html=True)
+    plotly_config = {"displayModeBar": False, "responsive": True}
     st.plotly_chart(
         apply_chart_theme(revenue_fig),
-        use_container_width=True,
-        config={"displayModeBar": False, "responsive": True},
+        width="stretch",
+        config=plotly_config,
     )
     st.markdown("</div>", unsafe_allow_html=True)
 
@@ -322,8 +323,8 @@ def render_charts(df) -> None:
     left.markdown('<div class="chart-card">', unsafe_allow_html=True)
     left.plotly_chart(
         apply_chart_theme(transactions_fig),
-        use_container_width=True,
-        config={"displayModeBar": False, "responsive": True},
+        width="stretch",
+        config=plotly_config,
     )
     left.markdown("</div>", unsafe_allow_html=True)
 
@@ -342,8 +343,8 @@ def render_charts(df) -> None:
     right.markdown('<div class="chart-card">', unsafe_allow_html=True)
     right.plotly_chart(
         apply_chart_theme(distribution_fig),
-        use_container_width=True,
-        config={"displayModeBar": False, "responsive": True},
+        width="stretch",
+        config=plotly_config,
     )
     right.markdown("</div>", unsafe_allow_html=True)
 
@@ -392,7 +393,7 @@ def main() -> None:
     render_charts(filtered_df)
 
     with st.expander("Cleaned data preview", expanded=False):
-        st.dataframe(filtered_df.head(25), use_container_width=True)
+        st.dataframe(filtered_df.head(25), width="stretch")
 
     render_footer(last_refresh)
 
