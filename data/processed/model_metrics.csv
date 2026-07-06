@@ -1,0 +1,9 @@
+task,model,accuracy,precision,recall,f1,roc_auc,rmse,mae,r2
+Return Prediction,Logistic Regression,0.56,0.6504781704781706,0.56,0.53688013136289,0.6765188834154351,,,
+Return Prediction,Decision Tree,0.48,0.3702325581395348,0.48,0.4005555555555555,0.4220032840722496,,,
+Return Prediction,Random Forest,0.48,0.48,0.48,0.48,0.45320197044334976,,,
+Satisfaction Prediction,Linear Regression,,,,,,0.8692752419591173,0.6577331514964918,0.17289902990030448
+Satisfaction Prediction,Random Forest Regressor,,,,,,0.6447558297526281,0.56112,0.5449758318739055
+Satisfaction Prediction,Gradient Boosting Regressor,,,,,,0.6366618790094498,0.540023330743187,0.5563284279949177
+Customer Segment Prediction,Random Forest Segment Classifier,0.98,0.9816666666666666,0.98,0.9799585921325051,,,,
+Customer Segment Prediction,Decision Tree Segment Classifier,0.96,0.9638095238095238,0.96,0.960047619047619,,,,
