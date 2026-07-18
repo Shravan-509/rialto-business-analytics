@@ -37,6 +37,17 @@
     color: #111827;
 }
 
+[data-testid="stSidebar"] [data-baseweb="input"] input,
+[data-testid="stSidebar"] [data-baseweb="input"] div,
+[data-testid="stSidebar"] [data-testid="stDateInput"] input,
+[data-testid="stSidebar"] [data-testid="stDateInput"] div[data-baseweb="input"] * {
+    color: #111827;
+}
+
+[data-testid="stSidebar"] [data-baseweb="input"] input::placeholder {
+    color: #64748b;
+}
+
 h1, h2, h3 {
     color: var(--rialto-text);
     letter-spacing: 0;
@@ -83,6 +94,16 @@ h1 {
     color: var(--rialto-muted);
     font-size: 1rem;
     margin-bottom: 0;
+}
+
+.hero-tech-stack {
+    margin-top: 18px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1.5;
 }
 
 .kpi-card {
@@ -275,4 +296,56 @@ h1 {
 .metric-note {
     color: var(--rialto-muted);
     font-size: 0.92rem;
+}
+
+.consultant-report,
+.advisor-section {
+    background: var(--rialto-panel);
+    border: 1px solid var(--rialto-border);
+    border-radius: 18px;
+    box-shadow: var(--rialto-shadow);
+}
+
+.consultant-report {
+    border-left: 5px solid var(--rialto-blue);
+    color: #26364a;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    padding: 1.25rem 1.4rem;
+}
+
+.consultant-kicker {
+    color: var(--rialto-accent-strong);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.consultant-title {
+    color: var(--rialto-text);
+    font-size: 1.55rem;
+    font-weight: 800;
+    margin: 0.25rem 0 0.55rem;
+}
+
+.advisor-section {
+    min-height: 155px;
+    margin-bottom: 1rem;
+    padding: 1rem 1.1rem;
+}
+
+.advisor-section-title {
+    color: var(--rialto-text);
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.advisor-section-body {
+    color: #334155;
+    font-size: 0.98rem;
+    line-height: 1.55;
 }
