@@ -325,10 +325,15 @@ Provides comprehensive project information including architecture, technology st
   <img src="images/12_about.png" alt="About" width="1000">
 </p>
 
+---
 
-## Generated Outputs
+## 📦 Generated Artifacts
 
-Processed datasets:
+The platform automatically generates multiple artifacts during execution to support analytics, reporting, machine learning evaluation, and Power BI integration.
+
+### 📊 Processed Datasets
+
+These datasets are generated after data preprocessing, sentiment analysis, and predictive analytics.
 
 ```text
 data/processed/rialto_cleaned.csv
@@ -338,7 +343,11 @@ data/processed/model_metrics.csv
 data/processed/feature_importance.csv
 ```
 
-Power BI exports:
+---
+
+### 📈 Power BI Export Files
+
+These curated datasets can be directly imported into Microsoft Power BI to build interactive dashboards and executive reports.
 
 ```text
 data/power_bi/executive_kpi.csv
@@ -350,11 +359,14 @@ data/power_bi/prediction.csv
 data/power_bi/sentiment.csv
 ```
 
-Reports:
+---
+
+### 📑 Generated Reports
+
+The platform automatically generates comprehensive business reports summarizing analytical findings and AI-driven recommendations.
 
 ```text
 reports/Business_Analytics_Report.md
-reports/business_analytics_report.md
 reports/business_analytics_report.pdf
 ```
 
