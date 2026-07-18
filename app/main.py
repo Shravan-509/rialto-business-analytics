@@ -16,7 +16,7 @@ from src import config
 from src.data_pipeline import load_clean_export
 
 
-APP_VERSION = "v0.1.0"
+APP_VERSION = config.APP_VERSION
 
 
 def load_css() -> None:
@@ -52,8 +52,9 @@ def render_sidebar(cleaned_df, last_refresh: datetime) -> None:
         <div class="sidebar-nav-item"><span class="sidebar-nav-icon">SA</span><span class="sidebar-nav-label">Sentiment Analysis</span></div>
         <div class="sidebar-nav-item"><span class="sidebar-nav-icon">PA</span><span class="sidebar-nav-label">Predictive Analytics</span></div>
         <div class="sidebar-nav-item"><span class="sidebar-nav-icon">FC</span><span class="sidebar-nav-label">Forecasting</span></div>
-        <div class="sidebar-nav-item"><span class="sidebar-nav-icon">AI</span><span class="sidebar-nav-label">GenAI Insights</span></div>
+        <div class="sidebar-nav-item"><span class="sidebar-nav-icon">AI</span><span class="sidebar-nav-label">Executive AI Advisor</span></div>
         <div class="sidebar-nav-item"><span class="sidebar-nav-icon">BI</span><span class="sidebar-nav-label">Power BI Export</span></div>
+        <div class="sidebar-nav-item"><span class="sidebar-nav-icon">AB</span><span class="sidebar-nav-label">About</span></div>
         """,
         unsafe_allow_html=True,
     )
@@ -101,9 +102,12 @@ def main() -> None:
     st.markdown(
         f"""
         <div class="hero-panel">
-            <div class="hero-eyebrow">Business Analytics Platform</div>
+            <div class="hero-eyebrow">Decision Intelligence Platform</div>
             <div class="hero-title">{config.APP_TITLE}</div>
             <p class="hero-subtitle">{config.APP_SUBTITLE}</p>
+            <div class="hero-tech-stack">
+                Analytics • Machine Learning • Forecasting • NLP • Generative AI
+            </div>
         </div>
         """,
         unsafe_allow_html=True,
