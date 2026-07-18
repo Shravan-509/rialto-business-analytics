@@ -13,7 +13,7 @@ from src import config
 from src.analytics import FilterState
 
 
-APP_VERSION = "v0.2.0"
+APP_VERSION = config.APP_VERSION
 COLOR_REVENUE = "#0f766e"
 COLOR_BLUE = "#1d4ed8"
 COLOR_TEAL = "#14b8a6"
@@ -116,7 +116,7 @@ def render_chart(fig: go.Figure) -> None:
     plotly_config = {"displayModeBar": False, "responsive": True}
     st.plotly_chart(
         fig,
-       width="stretch",
+        width="stretch",
         config=plotly_config,
     )
     st.markdown("</div>", unsafe_allow_html=True)
@@ -255,8 +255,9 @@ def render_sidebar_navigation() -> None:
         <div class="sidebar-nav-item"><span class="sidebar-nav-icon">TX</span><span class="sidebar-nav-label">Sentiment Analysis</span></div>
         <div class="sidebar-nav-item"><span class="sidebar-nav-icon">ML</span><span class="sidebar-nav-label">Predictive Analytics</span></div>
         <div class="sidebar-nav-item"><span class="sidebar-nav-icon">FC</span><span class="sidebar-nav-label">Forecasting</span></div>
-        <div class="sidebar-nav-item"><span class="sidebar-nav-icon">AI</span><span class="sidebar-nav-label">GenAI Insights</span></div>
+        <div class="sidebar-nav-item"><span class="sidebar-nav-icon">AI</span><span class="sidebar-nav-label">Executive AI Advisor</span></div>
         <div class="sidebar-nav-item"><span class="sidebar-nav-icon">BI</span><span class="sidebar-nav-label">Power BI Export</span></div>
+        <div class="sidebar-nav-item"><span class="sidebar-nav-icon">AB</span><span class="sidebar-nav-label">About</span></div>
         """,
         unsafe_allow_html=True,
     )

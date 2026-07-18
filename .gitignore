@@ -1,5 +1,13 @@
-#Environment files
+# Environment files
 .venv/
 .env
 .env.*
 .streamlit/secrets.toml
+
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Operating system metadata
+.DS_Store

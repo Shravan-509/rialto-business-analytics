@@ -19,6 +19,8 @@ POWER_BI_DIR = DATA_DIR / "power_bi"
 MODELS_DIR = PROJECT_ROOT / "models"
 NOTEBOOKS_DIR = PROJECT_ROOT / "notebooks"
 REPORTS_DIR = PROJECT_ROOT / "reports"
+REPORT_MARKDOWN_FILE = REPORTS_DIR / "business_analytics_report.md"
+REPORT_PDF_FILE = REPORTS_DIR / "business_analytics_report.pdf"
 
 RAW_DATA_FILE = RAW_DATA_DIR / "Rialto Data.csv"
 CLEANED_DATA_FILE = PROCESSED_DATA_DIR / "rialto_cleaned.csv"
@@ -44,10 +46,13 @@ REQUIRED_COLUMNS = [
 LOW_SATISFACTION_THRESHOLD = 2
 REVENUE_BAND_LABELS = ["Low", "Mid", "High", "Premium"]
 
-APP_TITLE = "Rialto AI-Powered Business Analytics Platform"
+PROJECT_NAME = "Rialto Decision Intelligence Platform"
+APP_TITLE = "Rialto Decision Intelligence Platform"
+APP_VERSION = "v1.0.0"
+APP_AUTHOR = "Shravan Kumar"
 APP_SUBTITLE = (
-    "Interactive decision intelligence for revenue, customers, returns, "
-    "and satisfaction"
+    "Transforming business data into actionable insights through analytics, "
+    "machine learning, forecasting, and generative AI."
 )
 
 OPENAI_MODEL = os.getenv(

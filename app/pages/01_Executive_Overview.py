@@ -1,4 +1,4 @@
-"""Executive Overview dashboard page for Milestone 1."""
+"""Executive Overview dashboard page."""
 
 from __future__ import annotations
 
@@ -22,7 +22,7 @@ from src.data_pipeline import (
 )
 
 
-APP_VERSION = "v0.1.0"
+APP_VERSION = config.APP_VERSION
 COLOR_REVENUE = "#0f766e"
 COLOR_TRANSACTIONS = "#1d4ed8"
 COLOR_DISTRIBUTION = "#14b8a6"
@@ -46,12 +46,12 @@ def format_percent(value: float) -> str:
     return f"{value:.1%}"
 
 
-def format_date(value) -> str:
+def format_date(value: datetime) -> str:
     """Format date-like values for display."""
     return value.strftime("%b %d, %Y")
 
 
-def apply_chart_theme(fig):
+def apply_chart_theme(fig: go.Figure) -> go.Figure:
     """Apply a consistent clean Plotly theme."""
     fig.update_layout(
         template="plotly_white",
@@ -127,8 +127,9 @@ def render_sidebar(df, last_refresh: datetime):
         <div class="sidebar-nav-item"><span class="sidebar-nav-icon">SA</span><span class="sidebar-nav-label">Sentiment Analysis</span></div>
         <div class="sidebar-nav-item"><span class="sidebar-nav-icon">PA</span><span class="sidebar-nav-label">Predictive Analytics</span></div>
         <div class="sidebar-nav-item"><span class="sidebar-nav-icon">FC</span><span class="sidebar-nav-label">Forecasting</span></div>
-        <div class="sidebar-nav-item"><span class="sidebar-nav-icon">AI</span><span class="sidebar-nav-label">GenAI Insights</span></div>
+        <div class="sidebar-nav-item"><span class="sidebar-nav-icon">AI</span><span class="sidebar-nav-label">Executive AI Advisor</span></div>
         <div class="sidebar-nav-item"><span class="sidebar-nav-icon">BI</span><span class="sidebar-nav-label">Power BI Export</span></div>
+        <div class="sidebar-nav-item"><span class="sidebar-nav-icon">AB</span><span class="sidebar-nav-label">About</span></div>
         """,
         unsafe_allow_html=True,
     )
@@ -280,7 +281,7 @@ def render_executive_summary(kpis: dict[str, float]) -> None:
 
 
 def render_charts(df) -> None:
-    """Render the required Plotly charts for Milestone 1."""
+    """Render the Executive Overview Plotly charts."""
     monthly = build_monthly_summary(df)
 
     revenue_fig = go.Figure()
