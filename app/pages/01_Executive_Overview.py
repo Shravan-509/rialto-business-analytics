@@ -168,7 +168,7 @@ def render_brand_sidebar_header() -> None:
         <div class="sidebar-brand">
             <div class="sidebar-logo">
                 <span>RI</span>
-                <span>Rialto Analytics</span>
+                <span>Rialto Decision Intelligence</span>
             </div>
             <div class="sidebar-version">Application version {APP_VERSION}</div>
         </div>

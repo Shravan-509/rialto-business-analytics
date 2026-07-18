@@ -69,7 +69,7 @@ def main() -> None:
     render_page_header(
         "Executive AI Advisor",
         "Executive AI Advisor",
-        "Gemini-powered decision intelligence grounded only in calculated Rialto analytics.",
+        "Gemini-powered executive decision support based exclusively on verified Rialto analytics.",
     )
 
     if filtered_df.empty:
