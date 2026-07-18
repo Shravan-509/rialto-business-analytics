@@ -1,67 +1,177 @@
-# Rialto AI-Powered Business Analytics Platform
+# Rialto Decision Intelligence Platform
+
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
+![Machine Learning](https://img.shields.io/badge/ML-Scikit--learn%20%7C%20XGBoost-teal)
+![Forecasting](https://img.shields.io/badge/Forecasting-Prophet%20%7C%20ARIMA-purple)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ## Project Overview
 
-This Master's Business Analytics capstone is an interactive Streamlit platform built entirely from `Rialto Data.csv`. Milestone 1 implements the dynamic data pipeline and the Executive Overview dashboard.
+Rialto Decision Intelligence Platform is a Master's Business Analytics capstone project built as a production-style Streamlit application. It transforms `Rialto Data.csv` into a full decision intelligence workflow covering descriptive analytics, NLP, predictive modeling, forecasting, executive AI recommendations, Power BI exports, and automated reporting.
 
-The application currently loads the raw CSV, validates the schema, handles missing values, removes duplicates, converts dates, engineers business features, exports a cleaned dataset, and displays executive KPIs and Plotly charts.
+Every KPI, chart, model result, export, and recommendation is generated dynamically from the source dataset. Replacing `data/raw/Rialto Data.csv` with another file using the same schema refreshes the platform outputs.
 
-All analytics are calculated dynamically from the CSV. Replacing `data/raw/Rialto Data.csv` with another file using the same schema will refresh the dashboard outputs.
+## Features
 
-## Architecture
+| Area | Capability |
+| --- | --- |
+| Executive Dashboard | Revenue, transactions, customers, AOV, return rate, satisfaction |
+| Sales Analytics | Revenue trends, growth, order distribution, quarterly analysis |
+| Customer Analytics | Customer value, repeat behavior, RFM-style segmentation |
+| Returns Analytics | Return rate, returned revenue, return-risk patterns |
+| Satisfaction Analytics | Score distribution, low-satisfaction transactions, satisfaction trends |
+| NLP | VADER, BERT fallback, word clouds, n-grams, topics, monthly sentiment |
+| Predictive Analytics | Return prediction, satisfaction prediction, customer segment prediction |
+| Forecasting | Monthly revenue, transaction, customer growth, and satisfaction forecasts |
+| AI Advisor | Gemini-powered executive decision brief with rule-based fallback |
+| Exports | Power BI CSVs, model outputs, Markdown report, PDF report |
 
-```text
-Rialto Data.csv
-  ↓
-Data Loading & Schema Validation
-  ↓
-Cleaning & Feature Engineering
-  ↓
-Cleaned Dataset Export
-  ↓
-Streamlit Executive Overview
-```
+## Technology Stack
 
-Approved full-platform architecture:
+- Python
+- Streamlit
+- Pandas and NumPy
+- Plotly
+- Scikit-learn
+- XGBoost where available
+- SHAP where available
+- NLTK
+- Transformers
+- WordCloud
+- BERTopic where available
+- Prophet
+- Statsmodels ARIMA
+- Google Gemini API
+- OpenAI API support for earlier summary layer
+- Joblib
+- ReportLab with matplotlib PDF fallback
+
+## Folder Structure
 
 ```text
 app/
-├── main.py
-├── pages/
-└── assets/
+  main.py
+  assets/style.css
+  pages/
+    01_Executive_Overview.py
+    02_Sales_Analytics.py
+    03_Customer_Analytics.py
+    04_Returns_Analytics.py
+    05_Customer_Satisfaction.py
+    06_Sentiment_Analysis.py
+    07_Predictive_Analytics.py
+    08_Forecasting.py
+    09_Executive_AI_Advisor.py
+    10_PowerBI_Export.py
+    11_About.py
 data/
-├── raw/
-├── processed/
-└── power_bi/
+  raw/
+  processed/
+  power_bi/
+docs/
+models/
+notebooks/
+reports/
 src/
-├── config.py
-├── data_pipeline.py
-├── analytics.py
-├── visualizations.py
-├── ml_pipeline.py
-├── nlp_pipeline.py
-├── forecasting.py
-├── genai_layer.py
-├── export_engine.py
-└── utils.py
+  analytics.py
+  config.py
+  data_pipeline.py
+  export_engine.py
+  forecasting.py
+  genai_layer.py
+  ml_pipeline.py
+  nlp_pipeline.py
+  reporting.py
+  utils.py
+  visualizations.py
+tests/
 ```
 
-Milestone 1 scope:
+## Architecture
 
-- Streamlit app shell
-- Sidebar navigation
-- Dynamic CSV data pipeline
-- Cleaned data export to `data/processed/`
-- Executive Overview page
-- Total Revenue
-- Total Transactions
-- Total Customers
-- Average Order Value
-- Return Rate
-- Average Satisfaction
-- Monthly Revenue chart
-- Monthly Transactions chart
-- Revenue Distribution chart
+```mermaid
+flowchart LR
+    A["Rialto Data.csv"] --> B["Data Pipeline"]
+    B --> C["Processed Analytics Dataset"]
+    C --> D["Descriptive Dashboards"]
+    C --> E["NLP Pipeline"]
+    C --> F["Predictive ML Pipeline"]
+    C --> G["Forecast Pipeline"]
+    E --> H["Executive AI Advisor"]
+    F --> H
+    G --> H
+    C --> I["Power BI Export"]
+    H --> J["Business Report Generator"]
+```
+
+See [docs/Architecture.md](docs/Architecture.md) for detailed pipeline diagrams.
+
+## Machine Learning Models
+
+Return prediction:
+
+- Logistic Regression
+- Decision Tree Classifier
+- Random Forest Classifier
+- XGBoost when installed
+
+Customer satisfaction prediction:
+
+- Linear Regression
+- Random Forest Regressor
+- Gradient Boosting Regressor
+
+Customer segment prediction:
+
+- Random Forest Segment Classifier
+- Decision Tree Segment Classifier
+
+The platform compares models using accuracy, precision, recall, F1, ROC AUC, RMSE, MAE, R2, confusion matrices, feature importance, and SHAP when available.
+
+## Forecasting
+
+Forecasting covers:
+
+- Monthly revenue
+- Monthly transactions
+- Customer growth
+- Satisfaction score
+
+Prophet is preferred. If Prophet fails or is unavailable, the system falls back to ARIMA, then to a naive last-value forecast for constrained environments.
+
+## NLP
+
+The NLP pipeline includes:
+
+- Text preprocessing
+- Automatic NLTK resource handling
+- VADER sentiment
+- BERT sentiment when available
+- Word clouds
+- Word frequency
+- N-grams
+- Topic extraction using BERTopic or fallback methods
+- Monthly sentiment trends
+
+## AI Features
+
+Generative AI is used only as an explanation and recommendation layer. It does not replace calculations, models, or forecasts.
+
+Supported provider configuration:
+
+```bash
+export LLM_PROVIDER=gemini
+export GEMINI_API_KEY="your-gemini-key"
+export OPENAI_API_KEY="your-openai-key"
+```
+
+Models:
+
+- Gemini: `gemini-2.5-flash`
+- OpenAI: `gpt-4.1-mini`
+
+If API keys, packages, network access, or provider calls fail, the platform uses rule-based executive summaries.
 
 ## Installation
 
@@ -71,26 +181,120 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## How to Run
-
-Place the source file here:
+Place the dataset at:
 
 ```text
 data/raw/Rialto Data.csv
 ```
 
-Then start the Streamlit app:
+## Running Locally
 
 ```bash
 streamlit run app/main.py
 ```
 
-The app will automatically export the cleaned dataset to:
+Open the local Streamlit URL shown in the terminal.
+
+## Environment Variables
+
+| Variable | Required | Purpose |
+| --- | --- | --- |
+| `LLM_PROVIDER` | No | `gemini`, `openai`, or fallback behavior |
+| `GEMINI_API_KEY` | No | Enables Gemini Executive AI Advisor |
+| `OPENAI_API_KEY` | No | Enables OpenAI-backed summary support |
+| `GEMINI_MODEL` | No | Override Gemini model |
+| `OPENAI_MODEL` | No | Override OpenAI model |
+
+## Screenshots
+
+Screenshot references:
+
+```text
+images/dashboard.png
+images/sales.png
+images/customer.png
+images/returns.png
+images/sentiment.png
+images/predictive.png
+images/forecast.png
+images/ai_advisor.png
+```
+
+## Generated Outputs
+
+Processed datasets:
 
 ```text
 data/processed/rialto_cleaned.csv
+data/processed/sentiment_results.csv
+data/processed/predictions.csv
+data/processed/model_metrics.csv
+data/processed/feature_importance.csv
 ```
 
-## Current Status
+Power BI exports:
 
-Milestone 1 is complete. Sentiment analysis, machine learning, forecasting, GenAI, and Power BI export are intentionally reserved for later milestones.
+```text
+data/power_bi/executive_kpi.csv
+data/power_bi/sales.csv
+data/power_bi/customer.csv
+data/power_bi/returns.csv
+data/power_bi/forecast.csv
+data/power_bi/prediction.csv
+data/power_bi/sentiment.csv
+```
+
+Reports:
+
+```text
+reports/Business_Analytics_Report.md
+reports/business_analytics_report.md
+reports/business_analytics_report.pdf
+```
+
+## Deployment
+
+Recommended deployment options:
+
+- Streamlit Community Cloud for portfolio/public capstone demos
+- Render or Railway for lightweight hosted deployments
+- Docker-based deployment for controlled enterprise environments
+
+Deployment checklist:
+
+- Add `data/raw/Rialto Data.csv` or configure secure data loading
+- Set secrets in the hosting platform, not in source control
+- Install dependencies from `requirements.txt`
+- Run `streamlit run app/main.py`
+- Verify AI fallbacks work when API keys are unavailable
+
+## Quality Assurance
+
+Run tests:
+
+```bash
+pytest
+```
+
+Compile-check Python files:
+
+```bash
+python -m py_compile app/main.py src/*.py app/pages/*.py
+```
+
+## Future Enhancements
+
+- Add authentication for multi-user access
+- Add Docker and CI/CD workflows
+- Add richer scenario planning for executive decision support
+- Add automated model drift monitoring
+- Add database ingestion alongside CSV ingestion
+- Add screenshots and a hosted demo link
+
+## Acknowledgements
+
+This capstone uses open-source Python analytics, visualization, NLP, forecasting, and machine learning libraries. Generative AI summaries are grounded in calculated platform analytics and include deterministic fallbacks.
+
+## License
+
+This project is released under the MIT License. See [LICENSE](LICENSE).
