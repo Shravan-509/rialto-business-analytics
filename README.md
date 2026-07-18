@@ -205,20 +205,126 @@ Open the local Streamlit URL shown in the terminal.
 | `GEMINI_MODEL` | No | Override Gemini model |
 | `OPENAI_MODEL` | No | Override OpenAI model |
 
-## Screenshots
+## 📸 Application Screenshots
 
-Screenshot references:
+### 🏠 Home
 
-```text
-images/dashboard.png
-images/sales.png
-images/customer.png
-images/returns.png
-images/sentiment.png
-images/predictive.png
-images/forecast.png
-images/ai_advisor.png
-```
+The landing page introduces the **Rialto Decision Intelligence Platform**, highlighting the application's purpose, key capabilities, and navigation to various analytics modules.
+
+<p align="center">
+  <img src="images/1_home.png" alt="Home" width="1000">
+</p>
+
+---
+
+### 📊 Executive Dashboard
+
+Provides a high-level overview of business performance through interactive KPI cards, revenue trends, transaction metrics, customer insights, return rate, and customer satisfaction. This dashboard enables executives to monitor overall business health at a glance.
+
+<p align="center">
+  <img src="images/2_dashboard.png" alt="Executive Dashboard" width="1000">
+</p>
+
+---
+
+### 💰 Sales Analytics
+
+Analyzes sales performance using interactive visualizations, including monthly revenue trends, quarterly sales, revenue distribution, cumulative revenue, and sales heatmaps to identify growth opportunities.
+
+<p align="center">
+  <img src="images/3_sales.png" alt="Sales Analytics" width="1000">
+</p>
+
+---
+
+### 👥 Customer Analytics
+
+Explores customer behavior through segmentation, purchase frequency, customer lifetime value, RFM analysis, and revenue contribution to better understand customer engagement and loyalty.
+
+<p align="center">
+  <img src="images/4_customer.png" alt="Customer Analytics" width="1000">
+</p>
+
+---
+
+### 📦 Returns Analytics
+
+Examines return patterns, return rates, returned revenue, and category-level return trends to identify operational challenges and opportunities for improving product quality and customer satisfaction.
+
+<p align="center">
+  <img src="images/5_returns.png" alt="Returns Analytics" width="1000">
+</p>
+
+---
+
+### ⭐ Customer Satisfaction
+
+Visualizes customer satisfaction scores using distributions, trends, heatmaps, and detailed insights to help evaluate customer experience across different segments.
+
+<p align="center">
+  <img src="images/6_descriptive.png" alt="Customer Satisfaction" width="1000">
+</p>
+
+---
+
+### 😊 Sentiment Analysis
+
+Uses Natural Language Processing (NLP) to analyze customer reviews, classify sentiment, identify key themes, generate word clouds, and produce AI-assisted summaries for actionable business insights.
+
+<p align="center">
+  <img src="images/7_sentiment.png" alt="Sentiment Analysis" width="1000">
+</p>
+
+---
+
+### 🤖 Predictive Analytics
+
+Applies machine learning models to predict customer behavior, return likelihood, and satisfaction levels while presenting feature importance, evaluation metrics, and business recommendations.
+
+<p align="center">
+  <img src="images/8_predictive.png" alt="Predictive Analytics" width="1000">
+</p>
+
+---
+
+### 📈 Forecasting
+
+Generates future forecasts for revenue, customer growth, transactions, and satisfaction using Prophet and ARIMA models to support strategic planning and business decision-making.
+
+<p align="center">
+  <img src="images/9_forecast.png" alt="Forecasting" width="1000">
+</p>
+
+---
+
+### 🧠 Executive AI Advisor
+
+Leverages Google Gemini to transform analytical results into executive-ready business recommendations, highlighting opportunities, risks, strategic actions, and overall business health.
+
+<p align="center">
+  <img src="images/10_ai_advisor.png" alt="Executive AI Advisor" width="1000">
+</p>
+
+---
+
+### 📄 Power BI Export
+
+Allows users to export processed analytics datasets and business reports for further visualization and reporting in Microsoft Power BI.
+
+<p align="center">
+  <img src="images/11_powerbi_export.png" alt="Power BI Export" width="1000">
+</p>
+
+---
+
+### ℹ️ About
+
+Provides comprehensive project information including architecture, technology stack, machine learning models, AI capabilities, forecasting approach, version information, and author details.
+
+<p align="center">
+  <img src="images/12_about.png" alt="About" width="1000">
+</p>
+
 
 ## Generated Outputs
 
