@@ -50,42 +50,76 @@ Every KPI, chart, model result, export, and recommendation is generated dynamica
 ## Folder Structure
 
 ```text
-app/
-  main.py
-  assets/style.css
-  pages/
-    01_Executive_Overview.py
-    02_Sales_Analytics.py
-    03_Customer_Analytics.py
-    04_Returns_Analytics.py
-    05_Customer_Satisfaction.py
-    06_Sentiment_Analysis.py
-    07_Predictive_Analytics.py
-    08_Forecasting.py
-    09_Executive_AI_Advisor.py
-    10_PowerBI_Export.py
-    11_About.py
-data/
-  raw/
-  processed/
-  power_bi/
-docs/
-models/
-notebooks/
-reports/
-src/
-  analytics.py
-  config.py
-  data_pipeline.py
-  export_engine.py
-  forecasting.py
-  genai_layer.py
-  ml_pipeline.py
-  nlp_pipeline.py
-  reporting.py
-  utils.py
-  visualizations.py
-tests/
+rialto-business-analytics-platform/
+│
+├── app/
+│   ├── main.py
+│   ├── assets/
+│   │   └── style.css
+│   │
+│   └── pages/
+│       ├── 01_Executive_Overview.py
+│       ├── 02_Sales_Analytics.py
+│       ├── 03_Customer_Analytics.py
+│       ├── 04_Returns_Analytics.py
+│       ├── 05_Customer_Satisfaction.py
+│       ├── 06_Sentiment_Analysis.py
+│       ├── 07_Predictive_Analytics.py
+│       ├── 08_Forecasting.py
+│       ├── 09_Executive_AI_Advisor.py
+│       ├── 10_PowerBI_Export.py
+│       └── 11_About.py
+│
+├── data/
+│   ├── raw/
+│   │   └── Rialto Data.csv
+│   ├── processed/
+│   └── power_bi/
+│
+├── docs/
+│
+├── images/
+│   ├── 1_home.png
+│   ├── 2_dashboard.png
+│   ├── 3_sales.png
+│   ├── 4_customer.png
+│   ├── 5_returns.png
+│   ├── 6_descriptive.png
+│   ├── 7_sentiment.png
+│   ├── 8_predictive.png
+│   ├── 9_forecas.png
+│   ├── 10_ai_advisor.png
+│   ├── 11_powerbi_export.png
+│   └── 12_about_page.png
+│
+├── models/
+│
+├── notebooks/
+│
+├── reports/
+│
+├── src/
+│   ├── analytics.py
+│   ├── config.py
+│   ├── data_pipeline.py
+│   ├── export_engine.py
+│   ├── forecasting.py
+│   ├── genai_layer.py
+│   ├── ml_pipeline.py
+│   ├── nlp_pipeline.py
+│   ├── reporting.py
+│   ├── utils.py
+│   └── visualizations.py
+│
+├── tests/
+│
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── PROJECT_REVIEW.md
+├── README.md
+├── requirements.txt 
+└── .gitignore
 ```
 
 ## Architecture
