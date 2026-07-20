@@ -420,6 +420,35 @@ Deployment checklist:
 - Run `streamlit run app/main.py`
 - Verify AI fallbacks work when API keys are unavailable
 
+## 🔍 Model Evaluation, Explainability & AI Reliability
+
+Ensuring the accuracy and reliability of both predictive models and AI-generated insights is a key aspect of the Rialto Decision Intelligence Platform. The platform incorporates established evaluation techniques for forecasting models and ensures that AI recommendations are generated from validated analytical outputs.
+
+### 📈 Forecast Model Evaluation
+
+The platform leverages **ARIMA** and **Prophet** models to forecast future revenue trends. Model performance is evaluated by comparing forecasted values against historical sales data to assess prediction accuracy and consistency.
+
+The following industry-standard evaluation metrics are used to measure forecasting performance:
+
+- **Mean Absolute Error (MAE)** – Measures the average magnitude of prediction errors.
+- **Root Mean Squared Error (RMSE)** – Penalizes larger prediction errors and provides an overall measure of model accuracy.
+- **Mean Absolute Percentage Error (MAPE)** – Expresses prediction error as a percentage, making results easier to interpret across different scales.
+
+These metrics provide confidence in the forecasting models and help ensure that business decisions are supported by reliable predictions.
+
+### 🤖 AI Recommendation Reliability
+
+The **Executive AI Advisor** generates recommendations exclusively from verified analytical outputs produced by the platform. Rather than relying on external assumptions, it analyzes insights derived from:
+
+- Executive KPIs
+- Sales Analytics
+- Customer Analytics
+- Returns Analytics
+- Sentiment Analysis
+- Predictive Forecasts
+
+By grounding every recommendation in validated business data, the platform delivers AI-generated insights that are **data-driven, explainable, and aligned with business objectives**. This approach improves transparency, enhances decision-making, and promotes greater trust in AI-assisted recommendations.
+
 ## Quality Assurance
 
 Run tests:
